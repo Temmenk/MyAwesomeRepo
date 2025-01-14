@@ -11,14 +11,24 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKey(KeyCode.W))
+       if (Input.GetKey(KeyCode.W))
        {
-            transform.postition += Vector3.forward *.05f;
+            transform.position += Vector3.forward *.05f;
        } 
 
-       if(Input.GetKey(KeyCode.S))
+       if (Input.GetKey(KeyCode.S))
        {
-            transform.postition += Vector3.back *.05f;
+            transform.position += Vector3.back *.05f;
        }
+        
+        if (Input.GetKey(KeyCode.A))
+       {
+            transform.position += Vector3.left *.05f;
+       } 
+
+        if (Input.GetKey(KeyCode.D))
+       {
+            transform.position += Vector3.right *.05f;
+       } 
     }
 }
