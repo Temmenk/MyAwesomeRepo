@@ -13,22 +13,22 @@ public class Player : MonoBehaviour
     {
        if (Input.GetKey(KeyCode.W))
        {
-            transform.position += Vector3.forward *.05f;
+            transform.position += Vector3.forward *.20f;
        } 
 
        if (Input.GetKey(KeyCode.S))
        {
-            transform.position += Vector3.back *.05f;
+            transform.position += Vector3.back *.20f;
        }
         
         if (Input.GetKey(KeyCode.A))
        {
-            transform.position += Vector3.left *.05f;
+            transform.position += Vector3.left *.20f;
        } 
 
         if (Input.GetKey(KeyCode.D))
        {
-            transform.position += Vector3.right *.05f;
+            transform.position += Vector3.right *.20f;
        } 
     }
 }
